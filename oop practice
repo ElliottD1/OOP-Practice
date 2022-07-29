@@ -1,0 +1,39 @@
+list=[]
+i=1
+max=6
+
+class student():
+    def __init__(self,course,name,age,grade):
+        self.course=course
+        self.name=name        
+        self.age=age        
+        self.grade=grade       
+        if self.grade<70:
+            print('Failed Grade')
+        else:
+            print('Passed Grade')
+
+    def classes(self):
+        max=6
+        if course=='science':
+            max+=1
+        if max==30:
+            print('Too many students in science.')
+    @classmethod
+    def list_of_studs(cls):
+        list.append(name)
+
+
+for i in range(max):
+    course=input('Course: ')
+    name=input('Name: ')
+    age=input('Age: ')
+    grade=input('Grade: ')
+    j=student(course,name,int(age),int(grade))
+    student.classes(j)
+    print(list)
+    student.list_of_studs()
+
+file =open('Students.txt','w')
+file.write(str(list))
+file.close()
